@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<script language="javascript" type="text/javascript">
+			document.write("Hello World!<br>");
+			var property;
+			var count = 1;
+			document.write("Navigator Object Properties<br>");
+			for(property in navigator) {
+				document.write(count++ + ". " + property + "<br>");
+			}
+			while(count < 100) {
+				count = count + 1;
+				if(count == 60)
+					continue;
+				
+				document.write(count + "<br>");
+			}
+		</script>
+		<noscript>
+			Sorry... JavaScript is needed to go ahead.
+		</noscript>
+	</body>
+</html>
